@@ -1,22 +1,28 @@
-from src.Module import MStart, MWallpaper
-from src.Module.db import MDataBase as db
+import schedule
+from time import sleep
+from src.Module import MStart
+from src.Module.MWallpaper import MWallpaper
 
-import time
+
+def main():
+    if (MStart().FindFolder() and MStart().ChekConection()):
+        wp()
+
+        # я хочу спать и кушать ;c
 
 
-def Start():
-    if MStart().FindFolder():
-        Connection = MStart().ChekConection()
-        if Connection == False:
-            while True:
-                if Connection == True:
-                    break
-                else:
-                    time.sleep(5)
-                    Connection = MStart().ChekConection()
-        else:
-            pass
+def wp():
+    MWallpaper().getImmage()
+    print('я отработал')
+    return True
 
 
 if __name__ == "__main__":
-    Start()
+    main()
+
+    schedule.every().day.at("20:30").do(wp)
+
+    while True:
+        schedule.run_pending()
+        print('Проверка времени')
+        sleep(30)

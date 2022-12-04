@@ -1,3 +1,2 @@
 from .MStart import MStart
-from .MWallpaper import MWallpaper
-from .db import MDataBase
+from .MWallpaper.MWallpaper import MWallpaper
