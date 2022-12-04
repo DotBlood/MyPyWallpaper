@@ -32,5 +32,6 @@
 3. Никита Катасонов
 
 
+---
 
 Скачать exe: https://github.com/DotBlood/MyPyWallpaper/releases/tag/bild
