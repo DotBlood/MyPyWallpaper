@@ -21,7 +21,9 @@ echo [2/3]
 pip3 install selenium
 echo [3/3]
 
+python3 AddToStartUp.pyw
+
 Start "iexplore.exe" "https://github.com/DotBlood"
 timeout 5 > NUL
 
-@REM python3 main.py
+python3 main.pyw
