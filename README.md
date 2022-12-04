@@ -13,6 +13,7 @@
 1. MyPyWallpaper.exe
 * "если вы хотите добавить программу в автозагрузку, запустите bootstrapper.bat в котологе программы.
 
+Скачать: https://github.com/DotBlood/MyPyWallpaper/releases/tag/bild
 --- 
 
 
