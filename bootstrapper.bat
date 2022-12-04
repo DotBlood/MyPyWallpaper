@@ -13,7 +13,6 @@ echo
 echo                                           Group 221-323                          
 echo                                   #===========================#
 
-
 pip3 install schedule
 echo [1/3]
 pip3 install requests
